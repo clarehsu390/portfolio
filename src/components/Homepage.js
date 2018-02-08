@@ -1,5 +1,6 @@
 import React from 'react';
 import './Homepage.css';
+import NavBar from './Navbar';
 export default class Homepage extends React.Component {
     componentDidMount() {
         this.displayLater();
@@ -14,25 +15,26 @@ export default class Homepage extends React.Component {
     render() {
         return (
             <div className="homepage">
+            <NavBar/>
                 <header className='page__header'>
                     <h1 className='page__title'>
-                    Hello 👋, 
+                    HELLO, 
                     <br/>
-                    my name is
+                    MY NAME IS
                     <br/>
-                    Clare Hsu.
+                    <span className='name'>CLARE HSU.</span>
                     </h1>
-                    <span className='page__span'>
+                    <span className='page__sub'>
                     <img src={require('../selfie.jpg')} className='page__photo'/>
                     </span>
-                  
                     </header>
                 
                     <section>
                     <h2 className='page__text hide'>
                     Software developer with a linguistics background.
                     <br/>
-                    Check out my github, stalk me on LinkedIn, or hit me up!
+                    Check out my <a href="https://github.com/clarehsu390/"><i class="fa fa-github" aria-hidden="true"></i></a>, connect with me on <a href="https://www.linkedin.com/in/clare-hsu-aa3866132/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>, 
+                    or stalk my resume.
                     </h2>
                     </section>
                 

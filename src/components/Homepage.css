@@ -1,8 +1,10 @@
 .homepage {
     display: flex;
-    font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-family: 'Titillium Web', sans-serif;
     flex-direction: column;
     padding: 2em;
+    margin: 1em;
+    
 }
 .page__header {
     display: flex;
@@ -12,14 +14,18 @@
     
 }
 .page__title {
-   font-size: 5em;
+    color: white;
+   font-size: 8em;
    animation: slideLeft 2s;
 }
 
+.name {
+    color: #40e0d0;
+}
 .page__photo {
-    height: 30em;
-    width: 30em;
-    border: dashed 1px black;
+    height: 20em;
+    width: 20em;
+    border: dashed 5px white;
     padding: 1em;
     border-radius: 50%;
     animation: slideRight 2s;
@@ -29,9 +35,24 @@
     display: none;
 }
 
-.page__text {
+.page__text{
     text-align: center;
+    color: white;
+    font-size: 2em;
     animation: fadeIn 1s;
+}
+
+.page__text i {
+    color: white;
+    font-size: 1em;
+}
+
+.page__text i:hover {
+    transform: scale(1.2);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    color: pink;
+    animation: zoomIn 0.8s;
 }
 @keyframes slideLeft {
     0% {
@@ -70,5 +91,15 @@
     100% {
         transform: translateY(0%);
         opacity: 1
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1.2)
     }
 }
