@@ -1,0 +1,74 @@
+.homepage {
+    display: flex;
+    font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    flex-direction: column;
+    padding: 2em;
+}
+.page__header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 2em;
+    
+}
+.page__title {
+   font-size: 5em;
+   animation: slideLeft 2s;
+}
+
+.page__photo {
+    height: 30em;
+    width: 30em;
+    border: dashed 1px black;
+    padding: 1em;
+    border-radius: 50%;
+    animation: slideRight 2s;
+}
+
+.hide {
+    display: none;
+}
+
+.page__text {
+    text-align: center;
+    animation: fadeIn 1s;
+}
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0.4
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0.3
+    }
+    60% {
+        transform: translateY(-70%);
+        opacity: 0.7
+    }
+    80% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1
+    }
+}
