@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    padding: 2em;
+    padding: 1em;
     
 }
 .page__title {
@@ -20,7 +20,7 @@
 }
 
 .name {
-    color: #40e0d0;
+    color: #7d92a5;
 }
 .page__photo {
     height: 20em;
