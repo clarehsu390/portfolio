@@ -2,18 +2,19 @@
     display: flex;
     font-family: 'Titillium Web', sans-serif;
     flex-direction: column;
-    padding: 2em;
-    margin: 1em;
+    /* padding: 2em;
+    margin: 1em; */
     
 }
 .page__header {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    padding: 1em;
+    padding: 2em;
     
 }
 .page__title {
+    margin-bottom: 0em;
     color: white;
    font-size: 8em;
    animation: slideLeft 2s;
@@ -26,27 +27,23 @@
     height: 20em;
     width: 20em;
     border: dashed 5px white;
-    padding: 1em;
+    padding: 2em;
     border-radius: 50%;
     animation: slideRight 2s;
 }
-
 .hide {
     display: none;
 }
-
 .page__text{
     text-align: center;
     color: white;
     font-size: 2em;
     animation: fadeIn 1s;
 }
-
 .page__text i {
     color: white;
     font-size: 1em;
 }
-
 .page__text i:hover {
     transform: scale(1.2);
     -webkit-text-stroke-width: 2px;
