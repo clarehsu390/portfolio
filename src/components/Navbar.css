@@ -1,6 +1,7 @@
 .navbar{
     align-items: center;
     background: #7d92a5;
+    font-family: 'Titillium Web', sans-serif;
 }
 .navbar__links {
     display: flex;
@@ -9,9 +10,11 @@
 
 }
 .navbar__links a{
-    float: right;
     padding: 8px;
     text-decoration: none;
     color: white;
     font-size: 1.5em;
+}
+.navbar__links a:hover{
+   color: pink;
 }

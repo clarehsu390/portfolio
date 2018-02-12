@@ -1,6 +1,5 @@
 import React from 'react';
 import './Homepage.css';
-import NavBar from './Navbar';
 export default class Homepage extends React.Component {
     componentDidMount() {
         this.displayLater();
@@ -15,7 +14,6 @@ export default class Homepage extends React.Component {
     render() {
         return (
             <div className="homepage">
-            <NavBar/>
                 <header className='page__header'>
                     <h1 className='page__title'>
                     HELLO, 

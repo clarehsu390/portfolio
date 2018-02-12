@@ -10,11 +10,11 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    padding: 2em;
     
 }
 .page__title {
     margin-bottom: 0em;
+    margin-top: 0em;
     color: white;
    font-size: 8em;
    animation: slideLeft 2s;
@@ -24,10 +24,11 @@
     color: #7d92a5;
 }
 .page__photo {
+    margin-top: 2em;
     height: 20em;
     width: 20em;
     border: dashed 5px white;
-    padding: 2em;
+    padding: 1em;
     border-radius: 50%;
     animation: slideRight 2s;
 }
