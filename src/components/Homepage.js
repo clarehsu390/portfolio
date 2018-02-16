@@ -31,7 +31,7 @@ export default class Homepage extends React.Component {
                     <h2 className='page__text hide'>
                     Software developer with a linguistics background.
                     <br/>
-                    Check out my <a href="https://github.com/clarehsu390/"><i className="fa fa-github" aria-hidden="true"></i></a>, connect with me on <a href="https://www.linkedin.com/in/clare-hsu-aa3866132/"><i className="fa fa-linkedin-square" aria-hidden="true"></i></a>, 
+                    Check out my <a href="https://github.com/clarehsu390/"><i id="github" className="fab fa-github"></i></a>, connect with me on <a href="https://www.linkedin.com/in/clare-hsu-aa3866132/"><i id="linkedin" className="fab fa-linkedin"></i></a>, 
                     or stalk my resume.
                     </h2>
                     </section>
