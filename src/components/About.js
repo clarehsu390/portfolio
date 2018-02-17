@@ -1,15 +1,21 @@
 import React from 'react';
-import './About';
+import './About.css';
 export default class About extends React.Component {
     render() {
         return (
             <div className="about">
             <section className="about__section">
-                <h2>About Me</h2>
-                <img id="about-image" src={require("../IMG_3054.JPG")}/>>
-                <article>
-                    Clare is a software developer with a linguistics degree. She discovered her passion for coding when she was introduced to computational linguistics. Wanting to pursue a technical career, she has now completed projects and continues to develop her technical repoitoire. 
+            <div className="about__title">
+                <h2 id="about-title">About Me</h2>
+                <div className="about__article">
+                <span>
+                <img id="about-image" src={require("../IMG_3054.JPG")}/>
+                </span>
+                <article className="about__description">
+                    Clare is a software developer with a linguistics degree. She discovered her passion for coding when she realized it was like learning another language. Being able to communicate with technology creates endless possibilities. Wanting to pursue a technical career, she has now completed projects and continues to develop her technical repoitoire. Her passion currently lies in front-end development,creating visually appealing interfaces.  
                 </article>
+                </div>
+            </div>
                 <div className="about___likes">
                     
                 </div>

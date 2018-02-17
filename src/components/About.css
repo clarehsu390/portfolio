@@ -1,12 +1,41 @@
 .about {
+    width: 70%;
+    margin: auto;
+}
+.about > * {
     display: flex;
     font-family: 'Titillium Web', sans-serif;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     /* padding: 2em;
     margin: 1em; */
     
 }
 
-#about-image {
-    height: 100px;
+.about__section {
+    padding: 10px;
+
 }
+
+.about__article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#about-image {
+    height: 300px;
+    width: 450px;
+}
+
+#about-title {
+    font-size: 2em;
+}
+
+.about__description {
+    /* width: 50%; */
+    font-size: 20px;
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
