@@ -1,0 +1,12 @@
+.about {
+    display: flex;
+    font-family: 'Titillium Web', sans-serif;
+    flex-direction: column;
+    /* padding: 2em;
+    margin: 1em; */
+    
+}
+
+#about-image {
+    height: 100px;
+}

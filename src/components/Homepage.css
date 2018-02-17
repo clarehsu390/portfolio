@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    padding: 10px;
     
 }
 .page__title {
@@ -40,6 +41,7 @@
     color: white;
     font-size: 2em;
     animation: fadeIn 1s;
+    margin: 10px;
 }
 #github {
     color: white;
@@ -52,7 +54,7 @@
 
 }
 .page__text svg:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
     color: pink;
