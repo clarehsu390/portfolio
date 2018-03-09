@@ -7,10 +7,8 @@ import HomePage from './Homepage';
 import Navbar from './Navbar';
 const Page = () => (
     <div>
-        <Route path="/" component={ Navbar }/>
-        <Route exact path='/' component={ HomePage }/>
-        <Route path='/about' component={ About }/>
-        <Route path='/projects' component={ ProjectIndex }/>
+        <Navbar/>
+        <HomePage/>
         </div>
 );
 

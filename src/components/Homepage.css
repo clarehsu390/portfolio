@@ -2,9 +2,7 @@
     display: flex;
     font-family: 'Titillium Web', sans-serif;
     flex-direction: column;
-    /* padding: 2em;
-    margin: 1em; */
-    
+    width: 100%;
 }
 .page__header {
     display: flex;
@@ -15,17 +13,17 @@
 }
 .page__title {
     margin-bottom: 0em;
-    margin-top: 0em;
+    /* margin-top: 0em; */
     color: white;
-   font-size: 8em;
-   animation: slideLeft 2s;
+    font-size: 8em;
+    animation: slideLeft 2s;
 }
 
 .name {
     color: #7d92a5;
 }
 .page__photo {
-    margin-top: 2em;
+    margin-top: 7em;
     height: 20em;
     width: 20em;
     border: dashed 5px white;
@@ -107,5 +105,27 @@
 
     100% {
         transform: scale(1.2)
+    }
+}
+@media only screen and (max-width: 600px) {
+    .page__header {
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+    }
+    .page__title {
+        margin-bottom: 0em;
+        margin-top: 0em;
+        color: white;
+        font-size: 3em;
+        animation: slideLeft 2s;
+    }
+    .page__photo {
+        margin-top: 2em;
+        height: 15em;
+        width: 15em;
+    }
+    .page__text{
+        font-size: 1.5em;
     }
 }

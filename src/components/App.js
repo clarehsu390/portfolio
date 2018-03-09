@@ -5,9 +5,8 @@ import './App.css';
 
 const App = () => {
   return (
-    <HashRouter>
       <Page />
-    </HashRouter>
+  
   );
 };
 

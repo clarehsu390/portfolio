@@ -1,9 +1,10 @@
 import React from 'react';
 import './About.css';
+import ReactDOM from 'react-dom';
 export default class About extends React.Component {
     render() {
         return (
-            <div className="about">
+            <div id="about"className="about">
             <section className="about__section">
             <div className="about__title">
                 <h2 id="about-title">About Me</h2>
