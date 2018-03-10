@@ -6,3 +6,7 @@ html {
 i {
   color: black;
 }
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}

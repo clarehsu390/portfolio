@@ -1,0 +1,21 @@
+.project-images{
+    width: 500px;
+    height: 300px;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.project-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.overlay {
+    display: none;
+}
+.show {
+    display: block;
+}
