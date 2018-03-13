@@ -1,29 +1,48 @@
 import React from 'react';
 import './Projects.css';
 export default class Projects extends React.Component {
+    constructor() {
+        super();
+        this.handleHover = this.handleHover.bind(this);
+        this.handleHoverOut = this.handleHoverOut.bind(this);
+    }
     handleHover(e) {
-        e.target.classList.add('show');
+        let overlay = e.target.nextSibling;
+        overlay.classList.add('show');
+    }
+    handleHoverOut(e) {
+        let overlay = document.getElementsByClassName('show');
+        Array.from(overlay).forEach(el => {
+            el.classList.remove('show');
+        });
     }
     render() {
         return (
-            <div className="projects">
+            <div id="projects" className="projects">
                 <h2>Projects</h2>
                 <section className="project-section">
-                    <div className="project" onMouseOver={() => this.handleHover.bind(this)}>
+                    <div className="project" >
                         <h3>Your Aesthetic</h3>
-                        <img className="project-images" src={require("../full-stack.png")}/>
+                        <img onMouseOver={this.handleHover} onMouseOut={this.handleHoverOut} className="project-images" src={require("../full-stack.png")}/>
                         <div className="overlay">
+                        <a href="https://github.com/clarehsu390/"><i id="github" className="fab fa-github"></i></a>
                             </div>
                     </div>
 
                 <div className="project">
                     <h3>Word Frenzy</h3>
-                    <img className="project-images" src={require("../frenzy.png")}/>
+                    <img onMouseOver={this.handleHover} onMouseOut={this.handleHoverOut} className="project-images" src={require("../frenzy.png")}/>
+                    <div className="overlay">
+                        <a href="https://github.com/clarehsu390/"><i id="github" className="fab fa-github"></i></a>
+                            </div>
                 </div>
 
                 <div className="project">
                     <h3>Clustering Visualization</h3>
-                    <img className="project-images" src={require("../flex.png")}/>
+                    <img onMouseOver={this.handleHover} onMouseOut={this.handleHoverOut} className="project-images" src={require("../flex.png")}/>
+                    <div className="overlay">
+                        <a href="https://github.com/clarehsu390/"><i id="github" className="fab fa-github"></i></a>
+                            </div>
                     </div>
                     </section>
             </div>
