@@ -23,17 +23,17 @@ export default class Projects extends React.Component {
                 <section className="project-section">
                     <div className="project" >
                         <h3>Your Aesthetic</h3>
-                        <img onMouseOver={this.handleHover} onMouseOut={this.handleHoverOut} className="project-images" src={require("../full-stack.png")}/>
+                        <img className="project-img" onMouseOver={this.handleHover} onMouseOut={this.handleHoverOut} className="project-images" src={require("../full-stack.png")}/>
                         <div className="overlay">
-                        <a href="https://github.com/clarehsu390/"><i id="github" className="fab fa-github"></i></a>
-                            </div>
+                            <a href="https://github.com/clarehsu390/YourAesthetic"><i id="github" className="fab fa-github"></i></a>
+                        </div>
                     </div>
 
                 <div className="project">
                     <h3>Word Frenzy</h3>
                     <img onMouseOver={this.handleHover} onMouseOut={this.handleHoverOut} className="project-images" src={require("../frenzy.png")}/>
                     <div className="overlay">
-                        <a href="https://github.com/clarehsu390/"><i id="github" className="fab fa-github"></i></a>
+                        <a href="https://github.com/clarehsu390/Frenzy"><i id="github" className="fab fa-github"></i></a>
                             </div>
                 </div>
 
@@ -41,7 +41,7 @@ export default class Projects extends React.Component {
                     <h3>Clustering Visualization</h3>
                     <img onMouseOver={this.handleHover} onMouseOut={this.handleHoverOut} className="project-images" src={require("../flex.png")}/>
                     <div className="overlay">
-                        <a href="https://github.com/clarehsu390/"><i id="github" className="fab fa-github"></i></a>
+                        <a href="https://github.com/clarehsu390/Clustering-Visualization"><i id="github" className="fab fa-github"></i></a>
                             </div>
                     </div>
                     </section>
