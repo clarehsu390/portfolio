@@ -21,9 +21,9 @@ export default class Projects extends React.Component {
             <div id="projects" className="projects">
                 <h2>Projects</h2>
                 <section className="project-section">
-                    <div className="project" >
+                    <div className="project" onMouseOut={this.handleHoverOut}  >
                         <h3>Your Aesthetic</h3>
-                        <img className="project-img" onMouseOver={this.handleHover} onMouseOut={this.handleHoverOut} className="project-images" src={require("../full-stack.png")}/>
+                        <img className="project-img" onMouseOver={this.handleHover} className="project-images" src={require("../full-stack.png")}/>
                         <div className="overlay">
                             <a href="https://github.com/clarehsu390/YourAesthetic"><i id="github" className="fab fa-github"></i></a>
                         </div>

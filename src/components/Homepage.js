@@ -42,6 +42,9 @@ export default class Homepage extends React.Component {
                 
                 <ProjectIndex/>
                 <About/>
+                <div id="contact">
+                    <h3>Feel free to contact me at clare.hsu390@gmail.com or on <a href="https://www.linkedin.com/in/clare-hsu-aa3866132/">LinkedIn</a></h3>
+                    </div>
                 </div>
         );
      
