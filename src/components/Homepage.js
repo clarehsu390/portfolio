@@ -35,13 +35,14 @@ export default class Homepage extends React.Component {
                     Software developer with a linguistics background.
                     <br/>
                     Check out my <a href="https://github.com/clarehsu390/"><i id="github" className="fab fa-github"></i></a>, connect with me on <a href="https://www.linkedin.com/in/clare-hsu-aa3866132/"><i id="linkedin" className="fab fa-linkedin"></i></a>, 
-                    or stalk my resume.
+                    or stalk my resume <a href="./resume"><i id="resume"class="fas fa-address-card"></i></a>
                     </h2>
                     </section>
                 </div>
                 
                 <ProjectIndex/>
                 <About/>
+                    
                 <div id="contact">
                     <h3>Feel free to contact me at clare.hsu390@gmail.com or on <a href="https://www.linkedin.com/in/clare-hsu-aa3866132/">LinkedIn</a></h3>
                     </div>

@@ -50,6 +50,9 @@
     font-size: 1em;
 
 }
+#resume {
+    color: white;
+}
 .page__text svg:hover {
     transform: scale(1.1);
     -webkit-text-stroke-width: 2px;
